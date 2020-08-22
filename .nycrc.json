@@ -1,0 +1,6 @@
+{
+    "extension": ".mjs",
+    "include": [
+        "src/**/*.mjs"
+    ]
+}

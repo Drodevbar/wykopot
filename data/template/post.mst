@@ -1,0 +1,3 @@
+{{post.author.login}}: 
+
+{{post.body}}
