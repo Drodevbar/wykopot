@@ -1,6 +1,8 @@
 {
-    "extension": ".mjs",
-    "include": [
-        "src/**/*.mjs"
-    ]
+    "include": "src",
+    "exclude": [
+        "**/*.spec.js",
+        "src/integration/wykop/client.js"
+    ],
+    "all": true
 }

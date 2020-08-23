@@ -1,9 +1,7 @@
-import chai from 'chai';
+import { expect } from 'chai';
 import sinon from 'sinon';
-import entriesService from './entries-service.mjs';
-import wykopHttpClient from '../integration/wykop/client.mjs'
-
-const expect = chai.expect;
+import entriesService from './entries-service.js';
+import wykopHttpClient from '../integration/wykop/client.js'
 
 describe('[service/entries-service]', () => {
     describe('getActivePostWithMostVotes function', () => {
@@ -14,7 +12,7 @@ describe('[service/entries-service]', () => {
         });
 
         afterEach(() => {
-            fetchActivePostsStub.restore();
+            sinon.restore();
         });
 
         it('should return post with most votes', async () => {
@@ -50,7 +48,7 @@ describe('[service/entries-service]', () => {
         });
 
         afterEach(() => {
-            fetchHotPosts.restore();
+            sinon.restore();
         });
 
         it('should return post with most votes', async () => {
@@ -87,7 +85,7 @@ describe('[service/entries-service]', () => {
         });
 
         afterEach(() => {
-            fetchSingleEntryStub.restore();
+            sinon.restore();
         });
 
         it('should return comments for given post', async () => {

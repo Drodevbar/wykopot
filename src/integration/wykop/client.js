@@ -1,9 +1,6 @@
 import axios from 'axios';
-import dotenv from 'dotenv';
 import queryString from 'querystring';
-import { calculateMd5Hash } from "../../util/md5-hash-calculator.mjs";
-
-dotenv.config();
+import { calculateMd5Hash } from "../../util/md5-hash-calculator.js";
 
 const API_KEY = process.env.WYKOP_API_KEY;
 const API_SECRET = process.env.WYKOP_API_SECRET;

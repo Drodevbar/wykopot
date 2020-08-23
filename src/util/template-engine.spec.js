@@ -1,10 +1,8 @@
-import { renderTemplate } from "./template-engine.mjs";
+import { renderTemplate } from './template-engine.js';
 import fs from 'fs';
 import mustache from 'mustache';
 import sinon from 'sinon';
-import chai from 'chai';
-
-const expect = chai.expect;
+import { expect } from 'chai';
 
 describe('[util/template-engine]', () => {
     describe('renderTemplate function', () => {
@@ -19,8 +17,7 @@ describe('[util/template-engine]', () => {
         afterEach(() => {
             fsMock.verify();
             mustacheMock.verify();
-            fsMock.restore();
-            mustacheMock.restore();
+            sinon.restore();
         });
 
         it('should render template', () => {

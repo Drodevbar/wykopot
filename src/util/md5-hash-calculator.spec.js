@@ -1,7 +1,5 @@
-import { calculateMd5Hash } from "./md5-hash-calculator.mjs";
-import chai from 'chai';
-
-const expect = chai.expect;
+import { calculateMd5Hash } from './md5-hash-calculator.js';
+import { expect } from 'chai';
 
 describe('[util/md5-hash-calculator]', () => {
     describe('calculateMd5Hash function', () => {
