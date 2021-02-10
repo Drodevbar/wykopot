@@ -2,7 +2,7 @@
     "include": "src",
     "exclude": [
         "**/*.spec.js",
-        "src/integration/wykop/client.js"
+        "src/index.js"
     ],
     "all": true
 }

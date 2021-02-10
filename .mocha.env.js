@@ -1,0 +1,4 @@
+process.env.WYKOP_API_KEY = 'WYKOP_API_KEY-test';
+process.env.WYKOP_API_SECRET = 'WYKOP_API_SECRET-test';
+process.env.WYKOP_API_ACCOUNT_KEY = 'WYKOP_API_ACCOUNT_KEY-test';
+process.env.WYKOP_API_ACCOUNT_NAME = 'WYKOP_API_ACCOUNT_NAME-test';

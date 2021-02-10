@@ -1,3 +1,5 @@
-{{post.author.login}}: 
+{{authorNickname}} {{wroteFormat}}: 
 
-{{post.body}}
+{{content}}
+
+Link do posta: {{{postUri}}}

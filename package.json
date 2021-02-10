@@ -2,23 +2,24 @@
   "name": "wykopot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "babel-node index.js",
-    "test": "nyc mocha --require @babel/register --require @babel/polyfill src/**/*.spec.js --exit"
+    "build": "rimraf ./build && babel src -d build && cp -r data build",
+    "start": "npm run build && node ./build/index.js",
+    "test": "NODE_ENV=test nyc mocha --require .mocha.env.js --require @babel/register --require @babel/polyfill \"src/**/*.spec.js\" --exit",
+    "lint": "eslint ./src --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
-    "lodash": "^4.17.20",
     "mustache": "^4.0.1",
-    "node-cron": "^2.0.3",
     "qs": "^6.9.4"
   },
   "devDependencies": {
+    "@babel/cli": "^7.12.10",
     "@babel/core": "^7.11.4",
     "@babel/node": "^7.10.5",
     "@babel/polyfill": "^7.10.4",
@@ -27,8 +28,10 @@
     "@istanbuljs/nyc-config-babel": "^3.0.0",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
+    "eslint": "^7.7.0",
     "mocha": "^8.1.1",
     "nyc": "^15.1.0",
-    "sinon": "^9.0.3"
+    "sinon": "^9.0.3",
+    "sinon-chai": "^3.5.0"
   }
 }

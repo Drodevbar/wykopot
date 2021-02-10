@@ -1,3 +1,5 @@
-{{comment.author.login}}: 
+{{authorNickname}} {{wroteFormat}}: 
 
-{{comment.body}}
+{{content}}
+
+Link do komentarza: {{{commentUri}}}
