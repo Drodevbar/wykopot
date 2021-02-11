@@ -1,4 +1,4 @@
-import wykopHttpClient from '../integration/wykop/client.js';
+import wykopHttpClient from '../integration/wykop/client';
 
 const getActivePostWithMostVotes = async () =>
   await wykopHttpClient.fetchActivePosts()

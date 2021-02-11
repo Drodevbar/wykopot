@@ -2,11 +2,11 @@ import chai, { expect } from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 import sinon from 'sinon';
 import sinonChai from 'sinon-chai';
-import entryBuilder from './entry-builder.js';
-import entriesService from './entries-service.js';
-import * as templateEngine from '../template/engine/template-engine.js';
-import commentModelProvider from '../template/model/comment-template-model-provider.js';
-import postModelProvider from '../template/model/post-template-model-provider.js';
+import entryBuilder from './entry-builder';
+import entriesService from './entries-service';
+import * as templateEngine from '../template/engine/template-engine';
+import commentModelProvider from '../template/model/comment-template-model-provider';
+import postModelProvider from '../template/model/post-template-model-provider';
 
 chai.use(chaiAsPromised);
 chai.use(sinonChai);

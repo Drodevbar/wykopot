@@ -1,4 +1,4 @@
-import { getWroteFormat } from './verb-formatter.js';
+import { getWroteFormat } from './verb-formatter';
 import { expect } from 'chai';
 
 describe('[util/verb-formatter]', () => {

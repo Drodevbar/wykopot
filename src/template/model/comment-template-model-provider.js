@@ -1,5 +1,5 @@
 import linkBuilder from '../../integration/wykop/link-builder';
-import { getWroteFormat } from '../../util/verb-formatter.js';
+import { getWroteFormat } from '../../util/verb-formatter';
 
 const getModel = (commentData, postData) => ({
   authorNickname: commentData.author.login,

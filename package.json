@@ -16,6 +16,7 @@
     "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "mustache": "^4.0.1",
+    "node-cron": "^2.0.3",
     "qs": "^6.9.4"
   },
   "devDependencies": {

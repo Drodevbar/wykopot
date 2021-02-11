@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import wykopLinkBuilder from './link-builder.js';
+import wykopLinkBuilder from './link-builder';
 
 describe('[integration/wykop/link-builder]', () => {
   describe('buildLinkForPost function', () => {

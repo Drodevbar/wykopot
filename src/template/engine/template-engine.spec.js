@@ -1,4 +1,4 @@
-import { renderTemplate } from './template-engine.js';
+import { renderTemplate } from './template-engine';
 import fs from 'fs';
 import mustache from 'mustache';
 import sinon from 'sinon';

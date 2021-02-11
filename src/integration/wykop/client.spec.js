@@ -15,7 +15,7 @@ describe('[integration/wykop/client]', () => {
   let axiosPostStub;
   let md5HashCalculatorStub;
   let queryStringStringifyStub;
-  
+
   beforeEach(() => {
     axiosGetStub = sinon.stub(axios, 'get');
     axiosPostStub = sinon.stub(axios, 'post');

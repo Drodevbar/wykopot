@@ -1,5 +1,5 @@
-import wykopClient from '../integration/wykop/client.js';
-import entryBuilder from './entry-builder.js';
+import wykopClient from '../integration/wykop/client';
+import entryBuilder from './entry-builder';
 
 const uploadNewPostWithComment = async () => {
   try {
@@ -10,8 +10,6 @@ const uploadNewPostWithComment = async () => {
       body: post.content,
       embed: post.embed 
     }).then(res => res.data.data.id);
-
-    console.log(newPostId);
     
     const newCommentId = await wykopClient.addEntry({
       body: comment.content,
@@ -22,6 +20,7 @@ const uploadNewPostWithComment = async () => {
   } catch (err) {
     console.error({
       message: 'Failed to upload new post with comment',
+      errorMessage: err.message,
     });
 
     throw err;

@@ -1,8 +1,8 @@
 import { expect } from 'chai';
 import sinon from 'sinon';
-import provider from './post-template-model-provider.js';
+import provider from './post-template-model-provider';
 import linkBuilder from '../../integration/wykop/link-builder';
-import * as verbFormatter from '../../util/verb-formatter.js';
+import * as verbFormatter from '../../util/verb-formatter';
 
 describe('[template/model/post-template-model-provider]', () => {
   describe('getModel function', () => {

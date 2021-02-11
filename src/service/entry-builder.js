@@ -1,7 +1,7 @@
-import entriesService from './entries-service.js';
-import { renderTemplate } from '../template/engine/template-engine.js';
-import commentModelProvider from '../template/model/comment-template-model-provider.js';
-import postModelProvider from '../template/model/post-template-model-provider.js';
+import entriesService from './entries-service';
+import { renderTemplate } from '../template/engine/template-engine';
+import commentModelProvider from '../template/model/comment-template-model-provider';
+import postModelProvider from '../template/model/post-template-model-provider';
 
 const buildPost = async () => {
   try {

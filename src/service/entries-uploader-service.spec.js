@@ -1,10 +1,10 @@
 
 import sinon from 'sinon';
 import sinonChai from 'sinon-chai';
-import { entriesUploaderService } from './entries-uploader-service.js';
-import wykopClient from '../integration/wykop/client.js';
-import entryBuilder from './entry-builder.js';
 import chai, { expect } from 'chai';
+import { entriesUploaderService } from './entries-uploader-service';
+import wykopClient from '../integration/wykop/client';
+import entryBuilder from './entry-builder';
 
 chai.use(sinonChai);
 

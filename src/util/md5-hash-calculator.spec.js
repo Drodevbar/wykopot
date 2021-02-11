@@ -1,4 +1,4 @@
-import { calculateMd5Hash } from './md5-hash-calculator.js';
+import { calculateMd5Hash } from './md5-hash-calculator';
 import { expect } from 'chai';
 
 describe('[util/md5-hash-calculator]', () => {

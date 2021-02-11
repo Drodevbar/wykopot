@@ -1,8 +1,8 @@
 import chai, { expect } from 'chai';
 import sinon from 'sinon';
 import sinonChai from 'sinon-chai';
-import entriesService from './entries-service.js';
-import wykopHttpClient from '../integration/wykop/client.js';
+import entriesService from './entries-service';
+import wykopHttpClient from '../integration/wykop/client';
 
 chai.use(sinonChai);
 
